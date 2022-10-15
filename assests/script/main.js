@@ -47,5 +47,24 @@ $(document).ready(function () {
      Preloader 
  ====================================*/
 $(window).on("load", function () {
-  $(".preloader").fadeOut(1000);
+  $(".preloader").fadeOut(2000);
+});
+
+
+/*==================================
+     Gallery 
+ ====================================*/
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // autoplay:{
+  //      delay:4000,   
+  
+  // },
+       
 });

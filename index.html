@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assests/images/logotrasparent.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assests/images/logotrasparent.png"
+    />
     <!-- <meta property="og:locale" content="en_US" /> -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="RTuck Builders." />
@@ -20,6 +24,7 @@
       CSS LINK
     =================================== -->
     <link rel="stylesheet" href="./assests/style/floating-wpp.min.css" />
+    <link rel="stylesheet" href="./assests/style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assests/style/style.css" />
   </head>
   <body>
@@ -34,9 +39,7 @@
     <section class="top-arrow">
       <div class="content">
         <a href="javascript:void(0);" class="arrow-up">
-          <img
-            src="./assests/images/top-arrow.png"
-          />
+          <img src="./assests/images/top-arrow.png" />
         </a>
       </div>
     </section>
@@ -48,8 +51,7 @@
         <img
           src="./assests/images/logotrasparent.png"
           class="icon"
-          alt=""
-          srcset=""
+          alt="logo"
           width="40px"
         />
       </div>
@@ -66,7 +68,7 @@
       <ul class="navigation">
         <li><a class="nav-link" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#service">Services</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
       <!--=================================
@@ -102,94 +104,277 @@
         </strong>
       </p>
     </section>
-    <!-- ---------------------- -->
-    <!-- services -->
-    <section class="services" id="services">
-      <h2 class="services-header">Our Top Services</h2>
-      <div class="services-wraper">
-        <div class="service-container">
-          <img
-            src="./images/banner-product-4.png"
-            alt="cloud-services"
-            loading="lazy"
-            class="service-pic"
-          />
-          <h3 class="service-title">Cloud Services</h3>
-          <p class="service-detail">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nobis
-            quia similique sapiente consectetur sit cupiditate tempora eos
-            laboriosam voluptates.
-          </p>
-          <a href="#" class="service-btn">Buy Now</a>
-        </div>
+    <!-- ==================================
+        Why choose us section
+     ==================================== -->
+     <div class="space-why-choose-us-section"  ></div>
 
-        <div class="service-container">
-          <img
-            src="images/banner-product-5.png"
-            alt="unity-gaming-services"
-            loading="lazy"
-            class="service-pic"
-          />
-          <h3 class="service-title">Unity Gaming</h3>
-          <p class="service-detail">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nobis
-            quia similique sapiente consectetur sit cupiditate tempora eos
-            laboriosam voluptates.
-          </p>
-          <a href="#" class="service-btn">Buy Now</a>
+     <section id="why-us-section">
+      <div class="row">
+        <h2 class="section-heading">Why choose us</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/1.svg" alt="Strength image" width="72px">
+            </div>
+            <h3>Strength</h3>
+            <p>
+              Steel windows and doors are stronger than any alternative material. By direct comparison, they are three times stronger than aluminum. 
+            </p>
+          </div>
         </div>
-        <div class="service-container">
-          <img
-            src="./images/banner-product-6.png"
-            alt="xbox-services"
-            loading="lazy"
-            class="service-pic"
-          />
-          <h3 class="service-title">X-Box Subscription</h3>
-          <p class="service-detail">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nobis
-            quia similique sapiente consectetur sit cupiditate tempora eos
-            laboriosam voluptates.
-          </p>
-          <a href="#" class="service-btn">Buy Now</a>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/2.svg" alt=" Water proof image" width="72px">
+            </div>
+            <h3>Water Proof</h3>
+            <p>
+              We provide a layer of protection against water and moisture. Our products are designed to withstand the elements and are built to last.
+            </p>
+          </div>
         </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/3.svg" alt="Termite Resistant image" width="72px">
+            </div>
+            <h3>Termite Resistant</h3>
+            <p>
+              Termite Proof UPVC, Steel,  Windows and Doors, We manufacture supreme quality uPVC termite proof windows & doors.  
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/4.svg" alt="value for money image" width="72px">
+            </div>
+            <h3>Value for Money</h3>
+            <p>
+              Our products are highly cost effective and are available at competitive prices.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/5.svg" alt="maintenace image" width="72px">
+            </div>
+            <h3>Maintenance Free</h3>
+            <p>
+              Our products are maintenance free and do not require any special care. They are easy to clean and do not require any special care.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/6.svg" alt="Different size image" width="72px">
+            </div>
+            <h3>Different Sizes</h3>
+            <p>
+              Steel doors and windows don’t have to look plain and cold.we can customize your door for a stunning curb appeal.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/7.svg" alt="Long Lasting" width="72px">
+            </div>
+            <h3>Long Lasting</h3>
+            <p>
+              Strength is one of the key features of a steel door, and our thermally-bonded zinc galvanizing process will hold up to even the harshest of conditions. 
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/8.svg" alt="water proof image" width="72px">
+            </div>
+            <h3>Weather Proof</h3>
+            <p>
+              We created a special UV resistant UPVC blend, a unique tropical formulation that stands up to extreme radiation year after year and makes the windows and doors fade resistant, low maintenance requiring no paint or polish.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/9.svg" alt="lock image" width="72px">
+            </div>
+            <h3>Multi point Locking</h3>
+            <p>
+               Security is a top priority for us. Our windows and doors are equipped with multi-point locking systems that are designed to keep your home safe and secure.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/10.svg" alt="fire resistant image" width="72px">
+            </div>
+            <h3>Fire Resistant</h3>
+            <p>
+              Steel window manufacturers of fire-rated designs provide independent laboratory fire labels with their products.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/11.svg" alt="Environment image" width="72px">
+            </div>
+            <h3>Environment Friendly
+              </h3>
+            <p>
+              Our products are eco-friendly and are made from recycled materials. They are also recyclable and can be reused.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <img src="./assests/images/12.svg" alt="Quality Assured image" width="72px">
+            </div>
+            <h3>Quality Assured</h3>
+            <p>
+              We are committed to providing our customers with the best quality products. Our products are manufactured using the best quality raw materials.
+            </p>
+          </div>
+        </div>
+        
       </div>
     </section>
-    <!-- footer -->
-    <footer>
-      <div class="first-part">
-        <div class="useful-links">
-          <h3>Useful Links</h3>
-          <ul>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">Discount Offers</a></li>
-            <li><a href="#">Gaming Tools</a></li>
-          </ul>
+    <!-- ==================================
+       Gallery Section
+     ==================================== -->
+     <section class="gallery" >
+      <h2>Our products</h2>
+       <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/alcove.jpg" alt="">
+              <span>ghj</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/core 9.jpg" alt="">
+              <span>ghj</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/defender-108.jpg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/defender-88.jpg" alt="">
+            </div>
+            <div class="swiper-slide"> 
+              <img src="./images/deffender.jpg" alt="">
+            </div>
+            <div class="swiper-slide"> 
+              <img src="./images/door-cum-windw.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/grill-door.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/heathens-120.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/winter-cooper.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- <h1>GAME | <sup>over</sup></h1> -->
-        <div class="logo">
-          <a href="#">
-            <img src="./images/logo.jpeg" alt="logo" />
-          </a>
+
+    <!-- Swiper JS -->
+
+     </section>
+     
+    <!--=================================
+      Footer
+      Contact section
+    =================================== -->
+
+    <footer  id="contact">
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              RTuck Builders established in Kerala, India, in 2022 as one of the
+              most trusted manufacturing and retail companies. <br />
+              Our products are highly cherished across the nation, thanks to
+              their superior quality, durability, eco-friendliness and light
+              weight and it is the unique designs that make us standout.
+            </p>
+            <div class="social">
+              <a href="https://www.facebook.com/rijo.k.tomy"
+                ><img
+                  class="footer-icon facebook"
+                  src="./assests/images/facebook.png"
+                  alt="facebook logo"
+                />
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="contact" id="contact">
-          <h2>Contact-us</h2>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">G-mail</a></li>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
+        <div class="right box">
+          <img
+            src="./assests/images/full-logo.png"
+            alt=" business logo"
+            srcset=""
+            width="100px"
+          />
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place address">
+              <!-- <span class="fas fa-map-marker-alt"></span> -->
+              <img
+                class="footer-icon"
+                src="./assests/images/location.png"
+                alt="location image"
+              />
+
+              <span class="text">Paduppu, Kasargod</span>
+            </div>
+            <div class="phone address">
+              <!-- <span class="fas fa-phone-alt"></span> -->
+              <img class="footer-icon" src="./assests/images/call.png" alt="call image" />
+
+              <span class="text">+91 9747 3710 24</span>
+            </div>
+            <div class="email address">
+              <!-- <span class="fas fa-envelope"></span> -->
+              <img
+                class="footer-icon"
+                src="./assests/images/email.png"
+                alt="email image"
+              />
+              <span class="text">rtuckbuildingsolutions@gmail.com</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="second-part">
-        <p class="copy">&copy; Copyright 2022</p>
-        <p class="copy">
-          built with <span>&#x2661;</span> by <a href="#">Not Null</a>
-        </p>
+      <div class="bottom">
+        <center>
+          <span class="credit"
+            >Created By <a href="https://notnull.in/">Not Null</a> |
+          </span>
+          <span class="far fa-copyright"></span
+          ><span> 2022 All rights reserved.</span>
+        </center>
       </div>
     </footer>
   </body>
+
   <!--=================================
       Java Script
   =================================== -->
@@ -207,7 +392,7 @@
   <script type="text/javascript">
     $(function () {
       $("#myButton").floatingWhatsApp({
-        phone: "+919496060437",
+        phone: "+919747371024",
         popupMessage: "Hello, how can we help you?",
         message: "I like to know more about your services.",
         showPopup: true,
@@ -220,5 +405,6 @@
       });
     });
   </script>
+  <script src="./assests/script/swiper-bundle.min.js"></script>
   <script src="./assests/script/main.js"></script>
 </html>
