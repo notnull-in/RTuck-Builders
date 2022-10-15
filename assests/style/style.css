@@ -570,7 +570,9 @@ p {
  /*==================================
    footer section
  ====================================*/
-
+ .space-footer-section{
+  height: 80px;
+}
 footer{
   box-shadow: 0 3px 5px var(--secondary-shadow); 
 }
@@ -653,6 +655,7 @@ footer .footer-icon{
  
 }
 
+
 .bottom center{
   height: 30px;
   padding: 5px;
@@ -734,6 +737,9 @@ footer .facebook:hover{
   }
   .gallery.mobile-screen{
     display: block;
+  }
+  .space-footer2-section{
+    height: 50px;
   }
 }
 @media screen and (max-width:466px) {
