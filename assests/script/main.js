@@ -52,19 +52,36 @@ $(window).on("load", function () {
 
 
 /*==================================
-     Gallery 
+     Gallery  larger screen
  ====================================*/
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper#large-screen", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay:{
-  //      delay:4000,   
+  autoplay:{
+       delay:3000, 
+  },
+   
+});
+
+/*==================================
+     Gallery  mobile screen
+ ====================================*/
+var swiper = new Swiper(".mySwiper#mobile-screen", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay:{
+       delay:3000,   
   
-  // },
+  },
+
        
 });

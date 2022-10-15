@@ -334,7 +334,7 @@ nav ul li{
    about section
  ====================================*/
 .space-about-section{
-  height: 90px;
+  height: 80px;
 }
 .about{
   background-color: var(--bg-color);
@@ -370,7 +370,7 @@ nav ul li{
    Why Choose Us
  ====================================*/
  .space-why-choose-us-section{
-  height: 90px;
+  height: 80px;
  }
  #why-us-section{
   /* height: 100vh; */
@@ -470,14 +470,21 @@ p {
 /*==================================
     Gallery Section
  ====================================*/
-.gallery{
-  background-color: white;
-  padding: 1rem 6rem;
-  height:300px;
 
+ .space-gallery-section{
+    height: 80px;
+ }
+ .gallery.mobile-screen{
+    display: none;
+ }
+.gallery{
+  box-shadow: 0 3px 5px var(--secondary-shadow); 
 }
 .gallery h2{
   text-align: center;
+  padding-top: 20px;
+  /* margin-bottom: 95px; */
+
 }
 .gallery h2::after {
   content: "";
@@ -487,10 +494,10 @@ p {
   background-color: var(--secondary-color);
   margin: 0.4rem auto;
 }
-
  .swiper {
-  width: 90%;
+  width: 100%;
   height: 100%;
+  margin-top: 20px;
 }
 
 .swiper-slide {
@@ -512,16 +519,54 @@ p {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  height: 500px;
 }
 
 .swiper-slide img {
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.swiper-slide .content{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 
 
+}
+.swiper-slide:hover .content{
+  opacity: 1;
+  border-radius: 1%;
+
+}
+.swiper-slide .content h3{
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 20px;
+
+}
+.swiper-slide .content h4{ 
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+
+}
  /*==================================
    footer section
  ====================================*/
@@ -683,7 +728,24 @@ footer .facebook:hover{
     margin: 5px 0;
   }
 }
-
+@media screen and (max-width:767px) {
+  .gallery.large--screen{
+    display: none;
+  }
+  .gallery.mobile-screen{
+    display: block;
+  }
+}
+@media screen and (max-width:466px) {
+  .gallery.mobile-screen .swiper-slide{
+    height: 400px;
+  }
+  .gallery.mobile-screen .swiper-slide img{
+    height: 400px;
+  }
+  
+  
+}
 
 
 @media screen and (max-width: 720px){
