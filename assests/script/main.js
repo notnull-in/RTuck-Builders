@@ -47,9 +47,9 @@ $(document).ready(function () {
      Preloader 
  ====================================*/
 $(window).on("load", function () {
-  $(".preloader").fadeOut(2000);
+    $(".preloader").fadeOut(2000);
 });
-
+ 
 
 /*==================================
      Gallery  larger screen
