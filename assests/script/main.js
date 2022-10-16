@@ -7,6 +7,7 @@ const nav = document.querySelector("nav");
 
 menubtn.addEventListener("click", () => {
   ul.classList.toggle("show");
+  
 });
 
 /*==================================
@@ -17,7 +18,9 @@ navlinks.forEach((link) =>
   link.addEventListener("click", () => {
     ul.classList.remove("show");
   })
+
 );
+
 
 /*==================================
       top arrow button
