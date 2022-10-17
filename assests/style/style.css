@@ -50,7 +50,6 @@ a:hover {
 body {
   font-family: var(--font-family);
 }
-
 /*==================================
     Preloader 
  ====================================*/
@@ -239,19 +238,10 @@ nav ul li {
 /*==================================
    home section
  ====================================*/
- /*==================================
-   home section
- ====================================*/
- /*==================================
-   home section
- ====================================*/
- /*==================================
-   home section
- ====================================*/
-nav .navigation .dropdown{
+nav .navigation .dropdown {
   position: relative;
 }
-nav .navigation .dropdown .dropbtn{
+nav .navigation .dropdown .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
@@ -261,42 +251,30 @@ nav .navigation .dropdown .dropbtn{
   font-family: inherit;
   margin: 0;
 }
-nav .navigation .dropdown-content{
+nav .navigation .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-nav .navigation .dropdown-content a{
+nav .navigation .dropdown-content a {
   color: var(--secondary-color-two);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-nav .navigation .dropdown-content a:hover{
+nav .navigation .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-nav .navigation .dropdown:hover .dropdown-content{
+nav .navigation .dropdown:hover .dropdown-content {
   display: block;
 }
-nav .navigation .dropdown:hover .dropbtn{
+nav .navigation .dropdown:hover .dropbtn {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
- /*==================================
-   home section
- ====================================*/
- /*==================================
-   home section
- ====================================*/
- /*==================================
-   home section
- ====================================*/
- /*==================================
-   home section
- ====================================*/
 
 
 .burger-menu {
@@ -321,7 +299,7 @@ nav .navigation .dropdown:hover .dropbtn{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: slider 20s ease-in infinite;
+  animation: slider 30s ease-in-out infinite;
   flex-direction: column;
 }
 .hero-section-slider h2 {
@@ -339,6 +317,14 @@ nav .navigation .dropdown:hover .dropbtn{
   text-align: center;
   font-size: 1.5rem;
   font-weight: var(--bolder-font);
+}
+.hero-section-slider .hero-content::before{
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 8%;
+  background-color: rgba(0, 0, 0, 0.03);
+ 
 }
 /*==================================
    hero button
@@ -450,7 +436,7 @@ nav .navigation .dropdown:hover .dropbtn{
   display: flex;
   flex-wrap: wrap;
 }
- .row .section-heading {
+.row .section-heading {
   margin-bottom: 20px;
 }
 .column {
@@ -470,19 +456,19 @@ nav .navigation .dropdown:hover .dropbtn{
   cursor: pointer;
   transition: 0.5s;
 }
- h3 {
+h3 {
   font-size: 20px;
   font-weight: 600;
   color: #1f194c;
   margin: 1em 0;
 }
- p {
-  color: #575a7b;
+p {
+  /* color: #575a7b; */
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
- .icon-wrapper {
+.icon-wrapper {
   background-color: #fff;
   position: relative;
   margin: auto;
@@ -508,8 +494,8 @@ nav .navigation .dropdown:hover .dropbtn{
 .card:hover p {
   color: #f0f0f0;
 }
-#why-us-section .icon-wrapper img{
-  width:72px;
+#why-us-section .icon-wrapper img {
+  width: 72px;
 }
 @media screen and (min-width: 768px) {
   #why-us-sectionsection {
@@ -709,6 +695,7 @@ footer .footer-icon {
 }
 
 .bottom center {
+  margin-top: 30px;
   height: 30px;
   padding: 5px;
   font-size: 0.9375rem;
@@ -738,27 +725,30 @@ footer .facebook {
   margin: 0 auto;
   /* bottom: 35px; */
 }
-footer .facebook:hover {
+/* footer .facebook:hover {
   background-image: url(../images/facebook-hover.png);
-}
+} */
 
 /*==================================
    Hero section Animation
  ====================================*/
 
 @keyframes slider {
-  10% {
-    background-image: url("../images/background2.webp");
-  }
-  40% {
-    background-image: url("../images/background3.webp");
-  }
-  70% {
-    background-image: url("../images/background1.webp");
-  }
-  100% {
-    background-image: url("../images/background3.webp");
-  }
+ 0%{
+  background-image: url("../images/background2.webp");
+ }
+ 33.33%{
+  background-image: url("../images/background3.webp");
+ }
+ 41.33%{
+  background-image: url("../images/background-00.jpg");
+ }
+ 100%{
+  background-image: url("../images/background1.webp");
+ }
+
+
+
 }
 
 /*==================================
@@ -826,7 +816,7 @@ footer .facebook:hover {
   nav ul li a {
     color: #fff;
   }
-  nav .navigation .dropdown .dropbtn{
+  nav .navigation .dropdown .dropbtn {
     color: #fff;
   }
   .burger-menu {
@@ -848,22 +838,34 @@ footer .facebook:hover {
   .hero-section-slider {
     height: 90vh;
     width: 100%;
-    background-image: url("../images/mobile-background-4.jpg");
-    animation: slider 30s ease-in-out infinite;
+    background-image: url("../images/mobile-background-1.jpg");
+    animation: slider 60s ease-in-out infinite;
   }
+  .hero-section-slider .hero-content::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0);
+   
+  }
+ 
 
   @keyframes slider {
-    10% {
+    0% {
       background-image: url("../images/mobile-background-1.jpg");
     }
-    40% {
+    /* 8% {
+      background-image: url("../images/mobile-background-1.jpg");
+    } */
+    33.33% {
       background-image: url("../images/mobile-background-3.jpg");
     }
-    70% {
+    41.33% {
       background-image: url("../images/mobile-background-4.jpg");
     }
     100% {
-      background-image: url("../images/mobile-background-7.jpg");
+      background-image: url("../images/mobile-background-1.jpg");
     }
   }
 
