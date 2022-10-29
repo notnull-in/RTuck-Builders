@@ -57,8 +57,24 @@ $(window).on("load", function () {
 /*==================================
      Gallery  larger screen
  ====================================*/
+//  slider one
 
 var swiper = new Swiper(".mySwiper#large-screen", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay:{
+       delay:3000, 
+  },
+   
+});
+
+
+// Slider three
+var swiper = new Swiper(".mySwiper#large-screen2", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
@@ -70,6 +86,7 @@ var swiper = new Swiper(".mySwiper#large-screen", {
   },
    
 });
+
 
 /*==================================
      Gallery  mobile screen
