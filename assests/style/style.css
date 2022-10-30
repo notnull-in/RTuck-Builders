@@ -354,14 +354,14 @@ nav .navigation .dropdown:hover .dropbtn {
   font-size: 1.5rem;
   font-weight: var(--bolder-font);
 }
-.hero-section-slider .hero-content::before{
+/* .hero-section-slider .hero-content::before{
   content: "";
   position: absolute;
   width: 25%;
   height: 8%;
   background-color: rgba(0, 0, 0, 0.03);
  
-}
+} */
 /*==================================
    hero button
  ====================================*/
@@ -917,10 +917,7 @@ footer .facebook {
   }
   .hero-section-slider .hero-content::before{
     content: "";
-    position: absolute;
-    width: 25%;
-    height: 8%;
-    background-color: rgba(0, 0, 0, 0);
+    display:none;
    
   }
  
