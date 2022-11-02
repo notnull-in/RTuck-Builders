@@ -49,9 +49,13 @@ $(document).ready(function () {
 /*==================================
      Preloader 
  ====================================*/
-$(window).on("load", function () {
-    $(".preloader").fadeOut(2000);
-});
+// $(window).on("load", function () {
+//     $(".preloader").fadeOut(2000);
+
+// });
+$(window).on("load",function(){
+	$(".preloader").delay(2000).fadeOut("slow");
+})
  
 
 /*==================================
