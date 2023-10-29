@@ -50,27 +50,27 @@ a:hover {
 body {
   font-family: var(--font-family);
 }
- /* =================================
+/* =================================
     Floating WhatsApp Right
   ===================================   */
-  .whatsapp-ico {
-    fill: white;
-    width: 50px;
-    height: 50px;
-    padding: 3px;
-    background-color: #4dc247;
-    border-radius: 50%;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 10;
-  }
+.whatsapp-ico {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  padding: 3px;
+  background-color: #4dc247;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
 
-  .whatsapp-ico:hover {
-    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
-  }
+.whatsapp-ico:hover {
+  box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+}
 /*==================================
     Preloader 
  ====================================*/
@@ -258,18 +258,17 @@ nav ul li {
 .btn {
   color: var(--primary-color);
   font-weight: 600;
-  padding:  3px 20px;
-  border-radius:3px;
-  background-color:var(--primary-color);
-  color:#fff;
+  padding: 3px 20px;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 .btn:hover {
   border-bottom: 0px solid var(--secondary-color);
-  color:var(--primary-color);
+  color: var(--primary-color);
   background-color: white;
   transition: all 2s ease-in-out;
- }
- 
+}
 
 /*==================================
    home section
@@ -311,7 +310,6 @@ nav .navigation .dropdown:hover .dropbtn {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
-
 
 .burger-menu {
   color: var(--secondary-color-two);
@@ -555,15 +553,13 @@ p {
     Gallery Section
  ====================================*/
 
-
 .space-gallery-section {
   height: 80px;
 }
-.product-slider{
+.product-slider {
   box-shadow: 0 3px 5px var(--secondary-shadow);
-   
 }
-.product-slider h1{
+.product-slider h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: var(--bold-font);
@@ -579,12 +575,7 @@ p {
   background-color: var(--secondary-color);
   margin: 0.4rem auto;
 }
-.gallery.mobile-screen {
-  display: none;
-}
-/* .gallery {
-  box-shadow: 0 3px 5px var(--secondary-shadow);
-} */
+
 .gallery h2 {
   text-align: center;
   padding-top: 20px;
@@ -604,14 +595,13 @@ p {
   margin-top: 20px;
   /* box-shadow: 0 0 5px var(--secondary-shadow); */
 }
-hr{
+hr {
   /* color:var(--primary-color); */
   width: 100%;
   height: 3px;
   background-color: var(--primary-color);
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 .swiper-slide {
@@ -643,31 +633,18 @@ hr{
   height: 80%;
   object-fit: cover;
 }
-.swiper-slide img:hover{
-  transform: scale(1.1)  ;
+.swiper-slide img:hover {
+  transform: scale(1.1);
   transition: 0.5s;
-  
 }
- 
-.swiper-wrapper.mobile-screen{
-  height: 450px;
-}
-.swiper-pagination .swiper-pagination-bullet{
+
+.swiper-pagination .swiper-pagination-bullet {
   background-color: var(--secondary-color);
   width: 8px;
   height: 8px;
   margin-right: 0.5px;
-    
 }
-.swiper-pagination.mobile-screen .swiper-pagination-bullet{
-  background-color: var(--secondary-color);
-  width: 8px;
-  height: 8px;
-  margin-right: 0.5px;
-    
-}
- 
-  
+
 /*==================================
    footer section
  ====================================*/
@@ -735,8 +712,9 @@ footer {
   font-weight: 600;
   padding-left: 10px;
 }
-.center .content .text.phone,.center .content .text.mail{
-   color:#000000
+.center .content .text.phone,
+.center .content .text.mail {
+  color: #000000;
 }
 .center .content .phone {
   margin: 5px 0;
@@ -796,21 +774,18 @@ footer .facebook {
  ====================================*/
 
 @keyframes slider {
- 0%{
-  background-image: url("../images/background2.webp");
- }
- 33.33%{
-  background-image: url("../images/background3.webp");
- }
- 41.33%{
-  background-image: url("../images/background-00.jpg");
- }
- 100%{
-  background-image: url("../images/background1.webp");
- }
-
-
-
+  0% {
+    background-image: url("../images/background2.webp");
+  }
+  33.33% {
+    background-image: url("../images/background3.webp");
+  }
+  41.33% {
+    background-image: url("../images/background-00.jpg");
+  }
+  100% {
+    background-image: url("../images/background1.webp");
+  }
 }
 
 /*==================================
@@ -818,6 +793,9 @@ footer .facebook {
  ====================================*/
 
 @media screen and (max-width: 900px) {
+  .swiper-pagination {
+    display: none;
+  }
   footer {
     position: relative;
     bottom: 0px;
@@ -831,22 +809,8 @@ footer .facebook {
   }
 }
 @media screen and (max-width: 767px) {
-  .gallery.large--screen {
-    display: none;
-  }
-  .gallery.mobile-screen {
-    display: block;
-  }
   .space-footer2-section {
     height: 50px;
-  }
-}
-@media screen and (max-width: 466px) {
-  .gallery.mobile-screen .swiper-slide {
-    height: 400px;
-  }
-  .gallery.mobile-screen .swiper-slide img {
-    height: 400px;
   }
 }
 
@@ -871,8 +835,7 @@ footer .facebook {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.99);
-    left:0;
-
+    left: 0;
   }
   nav ul li {
     /* margin: 4px 8px; */
@@ -893,17 +856,15 @@ footer .facebook {
     transform: translateX(0);
   }
   .btn {
-    color:var(--primary-color);
-    background-color:#000000;
-  }
- 
-  .btn:hover {
-     
-    box-shadow: none;
-    color:#fff;
+    color: var(--primary-color);
     background-color: #000000;
-   
-   }
+  }
+
+  .btn:hover {
+    box-shadow: none;
+    color: #fff;
+    background-color: #000000;
+  }
 
   /*  hero section heading  */
   .hero-section h2 {
@@ -918,12 +879,10 @@ footer .facebook {
     background-image: url("../images/mobile-background-1.jpg");
     animation: slider 15s ease-in-out infinite;
   }
-  .hero-section-slider .hero-content::before{
+  .hero-section-slider .hero-content::before {
     content: "";
-    display:none;
-   
+    display: none;
   }
- 
 
   @keyframes slider {
     0% {

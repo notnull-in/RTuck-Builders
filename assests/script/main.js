@@ -7,7 +7,6 @@ const nav = document.querySelector("nav");
 
 menubtn.addEventListener("click", () => {
   ul.classList.toggle("show");
-  
 });
 
 /*==================================
@@ -18,9 +17,7 @@ navlinks.forEach((link) =>
   link.addEventListener("click", () => {
     ul.classList.remove("show");
   })
-
 );
-
 
 /*==================================
       top arrow button
@@ -53,10 +50,9 @@ $(document).ready(function () {
 //     $(".preloader").fadeOut(2000);
 
 // });
-$(window).on("load",function(){
-	$(".preloader").delay(2000).fadeOut("slow");
-})
- 
+$(window).on("load", function () {
+  $(".preloader").delay(2000).fadeOut("slow");
+});
 
 /*==================================
      Gallery  larger screen
@@ -70,12 +66,28 @@ var swiper = new Swiper(".mySwiper#large-screen", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay:{
-       delay:3000, 
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1080: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
   },
-   
+  autoplay: {
+    delay: 3000,
+  },
 });
-
 
 // Slider three
 var swiper = new Swiper(".mySwiper#large-screen2", {
@@ -85,27 +97,22 @@ var swiper = new Swiper(".mySwiper#large-screen2", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay:{
-       delay:3000, 
+  // responsive
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween:90,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
-   
-});
-
-
-/*==================================
-     Gallery  mobile screen
- ====================================*/
-var swiper = new Swiper(".mySwiper#mobile-screen", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  autoplay: {
+    delay: 3000,
   },
-  autoplay:{
-       delay:3000,   
-  
-  },
-
-       
 });
