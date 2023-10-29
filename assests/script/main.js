@@ -101,7 +101,7 @@ var swiper = new Swiper(".mySwiper#large-screen2", {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween:90,
+      spaceBetween: 90,
     },
     768: {
       slidesPerView: 2,

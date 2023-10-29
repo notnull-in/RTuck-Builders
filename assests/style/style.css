@@ -253,7 +253,6 @@ nav ul {
 }
 nav ul li {
   font-weight: var(--bold-font);
-  padding-right: 40px;
 }
 .btn {
   color: var(--primary-color);
